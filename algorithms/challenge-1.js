@@ -1,36 +1,15 @@
 function isAnagram(str1, str2) {
- 
-    let check = 0;
-            if( str1.length !== str2.length) {
-               return false; 
-               
-            }
-            for (let i = 0; i < str1.length; i++) {
-                for(let j = 0; j < str2.length; j++) {
-                    if(str1[i] == str2[j]) {
-                        check ++;
-        
-                    } else {
-                    
-                    }
-                }
-        
-            }
-            for(let i = 0; i<str2.length; i++) {
-                for(let j = i+1; j <str2.length; j++) {
-                    if(str1[i] === str1[j]) {
-                        check =check-2;
-        
-                    } 
-                
-                }
-        
-            }
-            if (check == str1.length) {
-                return true;
-            }
-            else {
-                return false;
-            }
+    if(str1.length !== str2.length){ //Compare the lengths and return false if their lengths are not equal
+        return false;
+     }
+     let sortOne = str1.split('').sort().join(''); //convert the first string to an array, sort the array alphabetically and then reverse it back to a string
+     let sortTwo = str2.split('').sort().join('');
+
+     if(sortOne === sortTwo){ //return true if the two stings are the same
+        return true;
+     } else { 
+        return false;
+     }
+    
 }
 module.exports = isAnagram

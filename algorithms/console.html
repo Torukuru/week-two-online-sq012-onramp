@@ -82,11 +82,72 @@ function checkPrime(num) {
    }
   
 }
-checkPrime(2);
-checkPrime(3);
-checkPrime(8);
 
+function missingNumber(numArr) {
+let check = 0;
+let missingArray =[];
+for(let i =0; i<9; i++) {
+    if((i+1) == numArr[check]) {
+        check++
 
+    } else {
+        missingArray.push(i+1);
+    }
+}
+if (missingArray.length == 0) {
+console.log("false");
+} else if ( missingArray.length == 1) {
+    console.log (missingArray[0]);
+
+}
+else {
+    console.log(missingArray);
+}
+}
+
+function replaceDivisible(x, y) {
+    for(let i =0; i < x.length; i ++ ) {
+        if(x[i] % y == 0) {
+            x[i] = "is Divisible";
+        }
+
+    }
+    console.log (x);
+    
+}
+
+function isPalindrome(line) {
+    line =line.toString();
+    let reverse = [];
+    for(let i = line.length - 1; i>=0; i-- ) {
+        reverse.push(line[i]);
+
+    }
+    reverse = reverse.join("");
+if(reverse == line) {
+    console.log("true");
+} else {
+    console.log("false");
+}
+return true;
+}
+function repeated(str2) {
+    let check = 0;
+    for(let i = 0; i<str2.length; i++) {
+    for(let j = i+1; j <=str2.length; j++) {
+     if(str2[i] === str2[j]) {
+        check++;
+        
+                    } 
+                
+                }
+        
+            }
+            console.log(check);
+
+}
+
+repeated("testere")
     </script>
     
 </body>
