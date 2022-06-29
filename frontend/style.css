@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+body {
+    background-color: #F2F2F2;
+}
+.header {
+    display: grid;
+    background-color: rgb(28, 27, 27);
+    grid-template-columns: 1fr 5fr 1fr;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+p {
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+a {
+    color:white;
+    text-decoration: none;
+    border: rgb(79, 79, 79)  1pt solid;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+.left {
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 1px;
+    background-color: white;
+}
+.container {
+    display: grid;
+    grid-template-columns: 2fr 5fr 1fr;
+    width: 960px;
+    margin: auto;
+    column-gap: 20px;
+}
+.first {
+  background: #FFFFFF;
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 3vw;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+  height: 130px;
+
+}
+.red {
+    background: #FF7979;
+height: 49px;
+width: 51px;
+left: 0px;
+top: 66px;
+border-radius: 5px;
+
+}
+.green {
+    height: 49px;
+width: 51px;
+left: 183px;
+top: 66px;
+border-radius: 5px;
+background: #38CC8B;
+
+}
+.blue {
+height: 49px;
+width: 51px;
+left: 366px;
+top: 66px;
+border-radius: 5px;
+background: #5E54A4;
+
+
+}
+
+.black {
+height: 49px;
+width: 51px;
+left: 549px;
+top: 66px;
+border-radius: 5px;
+background: #3D3B48;
+
+}
+.second {
+    background-color: pink;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.learn {
+    padding-left: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.small {
+    font-size: 16px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+span.small {
+    font-size: 7px;
+}
+.heading {
+    background: #5E54A4;
+    width:150px;
+    margin: 0 auto;
+    margin-top: 7vh;
+    padding: 10px;
+
+
+}
+.form {
+    background: #F2F2F2;
+    height: 180px;
+    width: 150px;
+    margin: 0 auto;
+}
+.third {
+    background-color: pink;
+    height: 350px;
+    width: 12vw;
+}
